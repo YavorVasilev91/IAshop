@@ -44,4 +44,8 @@
     <ProjectReference Include="..\IAshop.Web.Infrastructure\IAshop.Web.Infrastructure.csproj" />
     <ProjectReference Include="..\IAshop.Web.ViewModels\IAshop.Web.ViewModels.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Administration\Views\Dashboard\" />
+  </ItemGroup>
 </Project>

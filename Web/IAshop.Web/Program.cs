@@ -8,7 +8,6 @@
     using IAshop.Data.Models;
     using IAshop.Data.Repositories;
     using IAshop.Data.Seeding;
-    using IAshop.Services.Data;
     using IAshop.Services.Mapping;
     using IAshop.Services.Messaging;
     using IAshop.Web.ViewModels;
@@ -64,7 +63,6 @@
 
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
-            services.AddTransient<ISettingsService, SettingsService>();
         }
 
         private static void Configure(WebApplication app)
