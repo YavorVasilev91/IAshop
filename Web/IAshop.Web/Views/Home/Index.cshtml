@@ -1,9 +1,17 @@
 ﻿@using IAshop.Common
+@model IndexViewModel
 @{
     this.ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome to @GlobalConstants.SystemName!</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>We have:</p>
+    <div class="col-md-4 offset-md-4" >
+        <ul class="list-group">
+            <li class="list-group-item">Products: @Model.ProductsCount</li>
+            <li class="list-group-item">Categories: @Model.CategoryCount</li>
+            <li class="list-group-item">Images: @Model.ImagesCount</li>
+        </ul>
+    </div>
 </div>
